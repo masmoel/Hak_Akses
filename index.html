@@ -5,14 +5,33 @@
 <body>
 <style type="text/css">
 	body{
-		background: #000;
+		background: #f2ae30; /* Old browsers */
+background: -moz-linear-gradient(top, #f2ae30 100%, #d6a228 100%, #edca04 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(100%,#f2ae30), color-stop(100%,#d6a228), color-stop(100%,#edca04)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f2ae30 100%,#d6a228 100%,#edca04 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f2ae30 100%,#d6a228 100%,#edca04 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f2ae30 100%,#d6a228 100%,#edca04 100%); /* IE10+ */
+background: linear-gradient(to bottom, #f2ae30 100%,#d6a228 100%,#edca04 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ae30', endColorstr='#edca04',GradientType=0 ); /* IE6-9 */
 	}
+form{
+	-webkit-border-radius: 50px;
+border-radius: 50px;
+background: white;
+width: 500px;
+height: 200px;
+margin-left:auto;
+margin-right:auto;
+margin-top: 200px;
+padding: 10px;
+text-align: center;
+}
 </style>
-<form action='login.php' method='POST' class='form'>
+<form action='login.php' method='POST' class='login'>
 <h1>Halaman login</h1>
-<label>Username :</label><input type='text' name='username' placeholder='Masukan Username Anda'>
-<label>Password : </label><input type='password' name='password' placeholder='Masukan Password Anda'>
-<input type='submit' value='Login'>
+<p><label>Username :</label><input type='text' name='username' placeholder='Masukan Username Anda'></p>
+<p><label>Password : </label><input type='password' name='password' placeholder='Masukan Password Anda'></p>
+<p><input type='submit' value='Login'></p>
 </form>
 </body>
 </style>
